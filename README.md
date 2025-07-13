@@ -41,7 +41,7 @@ This application includes three main vulnerabilities for educational purposes:
 
 1. **Download and run the setup script:**
 ```bash
-wget https://raw.githubusercontent.com/yourusername/vulnerable-library/main/setup.sh
+wget https://github.com/pondoksiber/Vuln_Campus_Library.git
 chmod +x setup.sh
 sudo ./setup.sh
 ```
@@ -66,7 +66,7 @@ sudo apt update
 sudo apt install -y nginx mysql-server php8.3-fpm php8.3-mysql php8.3-gd
 
 # Clone the repository
-git clone https://github.com/yourusername/vulnerable-library.git
+git clone https://github.com/pondoksiber/Vuln_Campus_Library.git
 cd vulnerable-library
 
 # Run setup script

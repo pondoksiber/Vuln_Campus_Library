@@ -41,7 +41,7 @@ This application includes three main vulnerabilities for educational purposes:
 
 1. **Download and run the setup script:**
 ```bash
-wget https://github.com/pondoksiber/Vuln_Campus_Library.git
+wget https://raw.githubusercontent.com/pondoksiber/Vuln_Campus_Library/refs/heads/main/setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
 ```

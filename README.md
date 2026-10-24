@@ -37,7 +37,33 @@ This application includes three main vulnerabilities for educational purposes:
 - Public IP address
 - Root or sudo access
 
-### Quick Setup
+### Interactive Setup (Recommended)
+
+`install.sh` asks you for the deployment values instead of hardcoding them, so
+there is no fixed IP to edit afterwards. It prompts for:
+
+- Server IP or domain (auto-detected default, overridable)
+- Install directory and HTTP port
+- Database name and MySQL root password
+- App admin username and password
+
+It also detects the correct PHP-FPM service and socket at runtime, and shows a
+summary with a confirmation prompt before changing anything.
+
+1. **Download and run the interactive installer:**
+```bash
+wget https://raw.githubusercontent.com/pondoksiber/Vuln_Campus_Library/refs/heads/main/install.sh
+chmod +x install.sh
+sudo ./install.sh
+```
+
+2. **Answer the prompts**, then confirm. When it finishes it prints the access
+   URL and test credentials you chose.
+
+### Quick Setup (non-interactive)
+
+`setup.sh` installs with fixed defaults. Note that it hardcodes a server IP in
+the Nginx config, so edit `setup.sh` before running if that IP is not yours.
 
 1. **Download and run the setup script:**
 ```bash
